@@ -1,0 +1,211 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(violin5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+        /************ Desktop ***********/
+
+/******* Nav Bar *******/
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #000;
+  position: sticky;
+  top:0;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.right{
+    margin-left: 20rem;
+}
+
+nav ul.left{
+    margin-right: 20rem;
+}
+
+nav ul li{
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a{
+  text-decoration: none;
+  display: block;
+  color: #B68949;
+  padding: 0.75em;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+
+nav ul li a.fa{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+
+nav ul li a:hover{
+  background: #fff;
+  color: #B68949;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+.dropdownicon{
+  display: none;
+}
+
+/****** Content ******/
+
+.content {
+    padding: 0;
+    margin: 6rem 0 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:33%;
+    text-align: center;
+}
+
+ .content h1{
+    font-family: "Sofia",cursive;
+    font-size: 4rem;
+    color: #B68949;
+    margin:0;
+    padding:0;
+}
+
+.content p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans",cursive;
+    color:#fff;
+}
+
+.video{
+    margin-top: 10rem;
+    font-family: "Josefin Sans",cursive;
+    color: #fff;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+footer ul {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.7em;
+    color: #B68949;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+footer ul li a:hover{
+  background: #fff;
+  color: #B68949;
+}
+
+footer ul li a.fa {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+
+          /********** Mobile **********/
+
+@media screen and (max-width:1280px){
+   
+    /****** Nav bar ******/
+    
+    nav ul.right li:not(:nth-child(1)),.social{
+        display: none;
+   }
+  
+    nav ul li.dropdownicon{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+  
+    nav ul li.dropdownicon a{
+        padding: 0.85rem;
+    }
+    
+    nav ul.right,nav ul.left{
+        margin: 0;
+    }
+    
+  
+    nav.responsive,nav.responsive ul,nav.responsive ul.right li,nav.responsive .social{
+        display:block;
+    }
+    
+    
+    /***** Content *****/  
+    .content {
+        margin: 6rem 1rem 0 1rem;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.7);
+        width:auto;
+    }
+    
+    .content h1{
+        font-size:2.5rem;
+    }
+    
+    .video{
+        overflow: hidden;
+    }
+    
+    footer ul li.social{
+        display: block;
+    }
+    
+}
